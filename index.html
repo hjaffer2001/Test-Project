@@ -40,7 +40,7 @@
       user.create({
         success: function(model) {
           console.debug("We've written the user to StackMob!");
- 	  $("#result1").html('Testing');
+		  $("#result1").html('We have written the user to StackMob');
           console.debug(model);
         },
         error: function(model, response) {
@@ -59,6 +59,7 @@
         success: function(model) {
           console.debug("We fetched the user from StackMob!");
           console.debug(model.toJSON());
+		  $("#result1").html(model);
 		  
         },
         error: function(model, response) {
