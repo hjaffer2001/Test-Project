@@ -59,7 +59,7 @@
         success: function(model) {
           console.debug("We fetched the user from StackMob!");
           console.debug(model.toJSON());
-		  $("#result1").html(model);
+		  $("#result1").html(model.toJSON());
 		  
         },
         error: function(model, response) {
