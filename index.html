@@ -23,7 +23,7 @@
 <input id="create" type="submit" onClick="create();" value="Create User"/>
 <input id="read" type="submit" onClick="read();" value="Read User"/>
 <div id="result1"></div>
- 
+ <div id="result2"></div>
 <script type="text/javascript">
   /* For sake of clarity, no jQuery is used in this example so as to focus on StackMob SDK syntax. */
  
@@ -59,7 +59,8 @@
         success: function(model) {
           console.debug("We fetched the user from StackMob!");
           console.debug(model.toJSON());
-		  $("#result1").html(model.toJSON());
+		  $("#result2").html(model.toJSON());
+		  alert(model.toJSON());
 		  
         },
         error: function(model, response) {
