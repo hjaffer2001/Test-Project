@@ -58,9 +58,9 @@
       fetchuser.fetch({
         success: function(model) {
           console.debug("We fetched the user from StackMob!");
-          console.debug(model.toJSON());
-		  $("#result2").html(model.toJSON());
-		  alert(model.toJSON());
+          var test = console.debug(model.toJSON());
+		  //$("#result2").html(model.toJSON());
+		  alert(test);
 		  
         },
         error: function(model, response) {
